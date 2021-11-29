@@ -13,6 +13,9 @@
 - month_to_season(9) -> 'Осень'
 """
 
+seasons = ["", "Зима", 'Зима', 'Весна', 'Весна', 'Весна', 'Лето', 'Лето', 'Лето', 'Лето', 'Лето', 'Лето', "Зима"]
+MES = dict(zip(range(12), seasons))
+
 
 def month_to_season(month: int) -> str:
     """Возвращает сезон по его номеру
@@ -23,7 +26,7 @@ def month_to_season(month: int) -> str:
     :return: название сезона, например "зима"
     :rtype: str
     """
-    season = None
+    season = MES.get(month)
     return season
 
 
