@@ -41,5 +41,5 @@ if __name__ == '__main__':
     save_user(users, user)
     print('Пользователь успешно добавлен!'
           if users.get('some_user', {}).get('login') is None
-             and users.get('some_user', {}).get('name') == 'Name'
+          and users.get('some_user', {}).get('name') == 'Name'
           else 'Ошибка добавления пользователя!')
