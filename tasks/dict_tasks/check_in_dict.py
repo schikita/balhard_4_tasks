@@ -8,7 +8,8 @@
 
 Пользователь вводит свой логин.
 
-Написать функцию check_in, которая проверяет, есть ли данный логин в системе (USERS).
+Написать функцию check_in, которая проверяет,
+есть ли данный логин в системе (USERS).
 Вернуть True или False
 
 ПРИМЕРЫ
@@ -33,8 +34,7 @@ USERS = {
 
 
 def check_in(users: dict, key: Any) -> bool:
-    # TODO вставить код сюда
-    result = None
+    result = key in users
     return result
 
 

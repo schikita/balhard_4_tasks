@@ -8,8 +8,11 @@ shopping_list = ["молоко", "сметана", "сыр"]
 
 
 def del_by_value(collection: list, value: str) -> list:
-    # TODO вставить код сюда
+    collection.remove(value)
     return collection
+
+    # 2 вариант
+    # del collection[value]
 
 
 if __name__ == '__main__':
